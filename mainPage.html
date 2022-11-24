@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>WE</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><h1><strong>WE.</strong></h1></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Main</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="allEvents.html">Events</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero Carousel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide mb-5"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1>Social Life of Engineering Faculty</h1>
+          <img
+            src="https://alumniyat.com/wp-content/uploads/2020/07/student-life.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <h1>We are here</h1>
+          <img
+            src="https://estudiar.vamtam.com/wp-content/uploads/2020/12/iStock-1210745478-conflicted-scaled.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <h1>to make your student life more saturated</h1>
+          <img
+            src="https://image.cnbcfm.com/api/v1/image/105922963-1558366857181astudentwatches.jpg?v=1559135880"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- End Hero Carousel -->
+
+    <!-- About Us -->
+    <section id="about">
+      <div class="container py-5" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img
+              src="https://img.freepik.com/free-photo/successful-happy-business-team_53876-74892.jpg?w=2000"
+              class="w-100"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-6 content">
+            <h2><strong>About us</strong></h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              natus enim corrupti et dolorum magnam iste molestiae architecto,
+              tenetur delectus sint vel nemo eius impedit adipisci deserunt
+              dolore sed quaerat! <br />
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+              voluptatem veritatis ducimus placeat enim, exercitationem
+              repellendus libero! Modi explicabo nisi ullam. Quo tempora
+              officiis qui amet asperiores iste cupiditate repellendus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Us -->
+
+    <!-- Upcoming Events -->
+    <section id="upcoming-events">
+      <div class="container py-5">
+        <h2><strong>Upcoming events</strong></h2>
+        <div class="row pt-3 g-3">
+          <div class="col-lg-6">
+            <div class="event-card">
+              <div class="event-card-item">
+                <h2 id="eventName"></h2>
+                <button onclick="window.location.href='eventDetails.html'" type="button" class="btn btn-light">
+                  View Details
+                </button>
+              </div>
+              <img src="images/party.jpg" class="w-100" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="event-card">
+              <div class="event-card-item">
+                <h2 id="eventName1"></h2>
+                <button onclick="window.location.href='eventDetails.html'" type="button" class="btn btn-light">
+                  View Details
+                </button>
+              </div>
+              <img src="images/party.jpg" class="w-100" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="event-card">
+              <div class="event-card-item">
+                <h2 id="eventName2"></h2>
+                <button onclick="window.location.href='eventDetails.html'" type="button" class="btn btn-light">
+                  View Details
+                </button>
+              </div>
+              <img src="images/party.jpg" class="w-100" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="event-card">
+              <div class="event-card-item">
+                <h2 id="eventName3"></h2>
+                <button onclick="window.location.href='eventDetails.html'" type="button" class="btn btn-light">
+                  View Details
+                </button>
+              </div>
+              <img src="images/party.jpg" class="w-100" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="event-card">
+              <div class="event-card-item">
+                <h2 id="eventName4"></h2>
+                <button onclick="window.location.href='eventDetails.html'" type="button" class="btn btn-light">
+                  View Details
+                </button>
+              </div>
+              <img src="images/party.jpg" class="w-100" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Upcoming Events -->
+
+    <!-- Our Team -->
+    <section id="team" class="page-section">
+      <div class="container py-5">
+        <!-- Heading -->
+        <h2><strong>Management</strong></h2>
+        <!-- Team Member's Details -->
+          <div class="row team-content pt-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <!-- Team Member -->
+              <div class="team-member pDark">
+                <!-- Image Hover Block -->
+                <div class="member-img">
+                  <!-- Image  -->
+                  <img class="img-responsive" src="images/photo-1.jpg" alt="" />
+                </div>
+                <!-- Member Details -->
+                <div class="team-title">
+                  <h4>John Doe</h4>
+                  <!-- Designation -->
+                  <span class="pos">DEAN</span>
+                </div>
+                <div class="team-socials">
+                  <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <!-- Team Member -->
+              <div class="team-member pDark">
+                <!-- Image Hover Block -->
+                <div class="member-img">
+                  <!-- Image  -->
+                  <img class="img-responsive" src="images/photo-2.jpg" alt="" />
+                </div>
+                <!-- Member Details -->
+                <h4>Larry Doe</h4>
+                <!-- Designation -->
+                <span class="pos">Director</span>
+                <div class="team-socials">
+                  <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <!-- Team Member -->
+              <div class="team-member pDark">
+                <!-- Image Hover Block -->
+                <div class="member-img">
+                  <!-- Image  -->
+                  <img class="img-responsive" src="images/photo-3.jpg" alt="" />
+                </div>
+                <!-- Member Details -->
+                <h4>Ranith Kays</h4>
+                <!-- Designation -->
+                <span class="pos">HOD</span>
+                <div class="team-socials">
+                  <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <!-- Team Member -->
+              <div class="team-member pDark">
+                <!-- Image Hover Block -->
+                <div class="member-img">
+                  <!-- Image  -->
+                  <img class="img-responsive" src="images/photo-4.jpg" alt="" />
+                </div>
+                <!-- Member Details -->
+                <h4>Joan Ray</h4>
+                <!-- Designation -->
+                <span class="pos">Finance</span>
+                <div class="team-socials">
+                  <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center">
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        &copy; <strong>SDU</strong> All Rights Reserved
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- End Footer -->
+
+    <script src="js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/498ec9eae7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"
+    ></script>
+    <script type="text/javascript">
+      function init() {
+        var public_spreadsheet_url =
+          "https://docs.google.com/spreadsheets/d/e/2PACX-1vRzRQkaWpo9oXopp7egkDudQDRH6c2gxcx4odluhb8CH3nmYdYcyCNPTmFLuskzLUdrXAHbXWvapT0r/pub?output=csv";
+
+        Papa.parse(public_spreadsheet_url, {
+          download: true,
+          header: true,
+          complete: showInfo,
+        });
+      }
+
+      window.addEventListener("DOMContentLoaded", init);
+
+      function showInfo(results) {
+        var data = results.data;
+        eventName.innerHTML = data[0].name;
+        eventName1.innerHTML = data[1].name;
+        eventName2.innerHTML = data[2].name;
+        eventName3.innerHTML = data[3].name;
+        eventName4.innerHTML = data[4].name;
+      }
+    </script>
+  </body>
+</html>
