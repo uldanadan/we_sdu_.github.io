@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+  /* About Us */
+  #about .content h2 {
+    padding-top: 16px;
+  }
+  /* Our Team */
+  .team-member .member-img img {
+    max-width: 100%;
+  }
+  /* Event Card */
+  .details-button {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 16px;
+  }
+  /* Event Details */
+  .event-poster .event-name h2 {
+    font-size: 36px;
+  }
+  .event-info {
+    flex-direction: column;
+  }
+  .event-details:not(:last-child) {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Our Team */
+  .team-socials a {
+    background: white;
+    padding: 1px 0;
+    margin: 2px;
+  }
+  .team-socials i {
+    width: 19px;
+    height: 19px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+  }
+}
