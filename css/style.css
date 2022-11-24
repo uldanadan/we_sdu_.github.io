@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Hero Carousel */
+.carousel-item {
+  position: relative;
+}
+.carousel-item h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  -webkit-text-stroke: 2px #000;
+}
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+}
+
+/* About Us */
+#about .about-img img {
+  height: 300px;
+  object-fit: cover;
+}
+#about content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Upcoming Events */
+#upcoming-events .event-card {
+  position: relative;
+}
+#upcoming-events .event-card-item {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+#upcoming-events .event-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Team */
+.team-member {
+  margin-bottom: 15px;
+}
+.member-img {
+  overflow: hidden;
+  padding: 5px;
+  position: relative;
+}
+.member-img:before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background: #000;
+  float: right;
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  right: 1px;
+}
+.member-img:after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background: #000;
+  float: right;
+  position: absolute;
+  z-index: -1;
+  bottom: -5px;
+  left: 1px;
+}
+.team-member .member-img img {
+  max-width: 295px;
+  margin: 0 auto;
+}
+.team-member h4 {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 10px 0 0;
+  text-align: center;
+}
+.team-member .pos {
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+.team-member .contact a {
+  padding: 0 8px;
+}
+.team-socials {
+  position: relative;
+  bottom: 120px;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+  text-align: center;
+}
+.team-socials a {
+  padding: 7px 0;
+  margin: 2px;
+  background: white;
+  color: #555;
+}
+.team-socials a:hover {
+  color: #000;
+}
+.team-member {
+  padding-top: 5px;
+}
+.team-member:hover .team-socials {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.team-socials i {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Event Details Page
+--------------------------------*/
+.event-poster {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background: url("../images/party.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  margin-top: 50px;
+}
+.event-poster .event-name {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.event-poster .event-name h2 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+}
+.event-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 30px 50px;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px #f2f2f2;
+}
+.event-details {
+  width: 100%;
+  padding-right: 20px;
+}
+.item-title {
+  color: #999;
+}
+.item-text {
+  margin-top: 12px;
+  font-size: 1.5rem;
+}
+.event-description {
+  width: 100%;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  line-height: 1.75;
+}
+.event-description h4 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 1.25em;
+}
+.event-description p {
+  margin-bottom: 20px;
+  color: #777;
+  font-size: 1.125em;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Event Card */
+.card-img {
+ height: 250px;
+ object-fit: cover;
+}
+.card-text {
+  color: #555;
+}
+.icon {
+  width: 25px;
+  text-align: center;
+}
+.details-button {
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+}
