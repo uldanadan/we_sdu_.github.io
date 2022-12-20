@@ -97,7 +97,7 @@
             '<div class="card mb-3">' +
             '<div class="row">' +
             '<div class="col-lg-4">' +
-            '<img src="images/party.jpg" class="card-img img-fluid rounded-start w-100" alt="..."/>' +
+            '<img src="' + data[i].image + '" class="card-img img-fluid rounded-start w-100" alt="..."/>' +
             "</div>" +
             '<div  class="col-lg-8">' +
             '<div class="card-body">' +
@@ -117,10 +117,10 @@
             '">' +
             data[i].date +
             "</span> <br />" +
-            '<i class="fa-solid fa-location-dot icon"></i><span id="numberOfPeople' +
+            '<i class="fa-solid fa-people-group icon"></i><span id="numberOfPeople' +
             i +
             ' ">' +
-            data[i].numberOfPeople +
+            data[i].numberOfPeople + ' participants' + 
             "</span>" +
             "</div>" +
             '<button onclick="testJS(' +
