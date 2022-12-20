@@ -48,9 +48,9 @@
 
     <!-- Event Details -->
     <section class="container">
-      <div class="event-poster">
+      <div class="event-poster" id="image">
         <div class="event-name">
-          <h2 id="name">Welcome Party</h2>
+          <h2 id="name"></h2>
           <button type="button" class="btn btn-light">Register</button>
         </div>
       </div>
@@ -58,7 +58,7 @@
       <div class="event-info">
         <div class="event-details">
           <h5 class="item-title">When?</h5>
-          <p class="item-text" id="date">1 December</p>
+          <p class="item-text" id="date"></p>
         </div>
         <div class="event-details">
           <h5 class="item-title">What time?</h5>
@@ -73,7 +73,7 @@
       <div class="event-description">
         <h4>Event Description</h4>
         <p id="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quaerat
+          <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quaerat
           neque harum nulla quam voluptatum aperiam repellat est eum atque
           explicabo provident non aspernatur voluptatem soluta! Dicta illum
           officiis corporis?<br />
@@ -84,7 +84,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aut
           cum deleniti excepturi laudantium vel, consectetur in quos explicabo,
           ea distinctio, eveniet dignissimos assumenda ipsa eius modi vitae
-          mollitia quae!
+          mollitia quae! -->
         </p>
       </div>
     </section>
@@ -113,6 +113,7 @@
       window.onload = function () {
         const eventDetails = JSON.parse(localStorage.getItem("eventDetails"));
 
+        document.getElementById('image').style.backgroundImage="url(" + eventDetails.image + ")";
         document.getElementById("name").innerHTML = eventDetails.name;
         document.getElementById("description").innerHTML =
           eventDetails.description;
