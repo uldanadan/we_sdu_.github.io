@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Main</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Main</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="allEvents.html">Events</a>
@@ -159,55 +159,55 @@
             <div class="event-card">
               <div class="event-card-item">
                 <h2 id="eventName"></h2>
-                <button onclick="window.location.href='eventDetails.html'" type="button" class="btn btn-light">
+                <button onclick=testJS(0) type="button" class="btn btn-light">
                   View Details
                 </button>
               </div>
-              <img src="https://simple.church/mt-content/uploads/2021/01/simple-church_welcome-party.jpg" class="w-100" alt="" />
+              <img id="eventImage" class="w-100" alt="" />
             </div>
           </div>
           <div class="col-lg-6">
             <div class="event-card">
               <div class="event-card-item">
                 <h2 id="eventName1"></h2>
-                <button onclick="window.location.href='eventDetails.html'" type="button" class="btn btn-light">
+                <button onclick=testJS(1) type="button" class="btn btn-light">
                   View Details
                 </button>
               </div>
-              <img src="images/party.jpg" class="w-100" alt="" />
+              <img id="eventImage1" class="w-100" alt="" />
             </div>
           </div>
           <div class="col-lg-4">
             <div class="event-card">
               <div class="event-card-item">
                 <h2 id="eventName2"></h2>
-                <button onclick="window.location.href='eventDetails.html'" type="button" class="btn btn-light">
+                <button onclick=testJS(2) type="button" class="btn btn-light">
                   View Details
                 </button>
               </div>
-              <img src="images/party.jpg" class="w-100" alt="" />
+              <img id="eventImage2" class="w-100" alt="" />
             </div>
           </div>
           <div class="col-lg-4">
             <div class="event-card">
               <div class="event-card-item">
                 <h2 id="eventName3"></h2>
-                <button onclick="window.location.href='eventDetails.html'" type="button" class="btn btn-light">
+                <button onclick=testJS(3) type="button" class="btn btn-light">
                   View Details
                 </button>
               </div>
-              <img src="images/party.jpg" class="w-100" alt="" />
+              <img id="eventImage3" class="w-100" alt="" />
             </div>
           </div>
           <div class="col-lg-4">
             <div class="event-card">
               <div class="event-card-item">
                 <h2 id="eventName4"></h2>
-                <button onclick="window.location.href='eventDetails.html'" type="button" class="btn btn-light">
+                <button onclick=testJS(4) type="button" class="btn btn-light">
                   View Details
                 </button>
               </div>
-              <img src="images/party.jpg" class="w-100" alt="" />
+              <img id="eventImage4" class="w-100" alt="" />
             </div>
           </div>
         </div>
@@ -347,12 +347,24 @@
       window.addEventListener("DOMContentLoaded", init);
 
       function showInfo(results) {
-        var data = results.data;
+        data = results.data;
+
         eventName.innerHTML = data[0].name;
         eventName1.innerHTML = data[1].name;
         eventName2.innerHTML = data[2].name;
         eventName3.innerHTML = data[3].name;
         eventName4.innerHTML = data[4].name;
+
+        eventImage.src = data[0].image;
+        eventImage1.src = data[1].image;
+        eventImage2.src = data[2].image;
+        eventImage3.src = data[3].image;
+        eventImage4.src = data[4].image;
+      }
+
+      function testJS(index) {
+        localStorage.setItem("eventDetails", JSON.stringify(data[index]));
+        window.location.href = "eventDetails.html";
       }
     </script>
   </body>
