@@ -68,7 +68,7 @@ h6 {
 
 .eventName__background {
   color: #fff;
-  -webkit-text-stroke: 2px #000;
+  -webkit-text-stroke: 1px #000;
   font-weight: 600;
 }
 /* Team */
