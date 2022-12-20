@@ -67,7 +67,8 @@ h6 {
 }
 
 .eventName__background {
-  background-image: linear-gradient(to right,#082673 0%,#082673 51%,#082673 100%) !important;
+  color: #fff;
+  -webkit-text-stroke: 2px #000;
 }
 /* Team */
 .team-member {
