@@ -66,6 +66,9 @@ h6 {
   object-fit: cover;
 }
 
+.eventNames__background {
+   background-color: black; 
+}
 /* Team */
 .team-member {
   margin-bottom: 15px;
