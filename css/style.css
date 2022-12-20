@@ -66,8 +66,8 @@ h6 {
   object-fit: cover;
 }
 
-.eventNames__background {
-   background-color: black; 
+.eventName__background {
+  background-image: linear-gradient(to right,#082673 0%,#082673 51%,#082673 100%) !important;
 }
 /* Team */
 .team-member {
